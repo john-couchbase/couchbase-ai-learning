@@ -2,31 +2,70 @@
 
 November 5, 2026
 
-Start with three projects: a reliable first tutorial, a practical search comparison, and a memory example with a clear reason to use it. These priorities follow the [audit findings](full-audit/FINDINGS.md); the suggested owners still need team agreement.
+Help people understand what the AI Data Plane can do, choose where to start, and see results they can try for themselves. Start with these five content projects, building on useful material we already have.
 
-| Priority | Work to produce | Who it helps | Suggested owner |
-|---|---|---|---|
-| 1 | Repair Catalog and Python examples; replace mislabeled Hyperscale lookups with actual nearest-neighbor queries. Run the examples before filming. | Developers trying the product | Docs and SDK maintainers |
-| 2 | A start-to-finish guide: choose components, set up keys, run a query, inspect the answer and clean up. Show required and optional services and who pays for each. | New evaluators | Technical Marketing and DevRel |
-| 3 | Keyword, vector and hybrid search on the same data. Explain index choices and show mandatory filters working in each retrieval path. | Search developers | Search DevRel and integration maintainers |
-| 4 | A support assistant that retrieves current orders and searches policy documents. Show how a changed record affects its answer. | Application developers and architects | DevRel and Solutions Engineering |
-| 5 | A memory decision guide and demo: later recall, changed preferences, temporary exceptions and deletion. Compare with a saved profile. | Agent developers | Memory PM and DevRel |
-| 6 | A repeatable memory cost study, including a workload where memory adds little value. Report quality, latency and all costs. | Architects and buyers | Performance Engineering and Memory PM |
-| 7 | An SDK guide showing versions, index support, filter syntax, credentials and support contacts. Include separate MCP and app environments where needed. | Developers and platform teams | SDK and integration maintainers |
-| 8 | A troubleshooting demo connecting tool versions, permissions and traces. Include a denied request and failed log write. | Platform and security reviewers | MCP/Catalog maintainers and Technical Marketing |
-| 9 | Operating guides for source changes, credential renewal, model configuration and cache errors. Show recovery and its costs. | Teams preparing deployment | AI Services PM and DevRel |
-| 10 | Consistent article templates, review checks and maintenance ownership. Link each video to its tested guide and code revision. | Content contributors | Technical Marketing and Docs tooling |
+## First five priorities
 
-Start item 10 alongside item 1. The order reflects setup blockers and dependencies, not a measured revenue ranking.
+### 1. A clear getting-started guide
 
-## What counts as finished
+Answer: **“Where do I start, and what do I need?”**
 
-For every package, a developer unfamiliar with the example should be able to follow the guide, obtain the expected result, inspect a failure case and clean up. Record the versions and results. The video should use the same code, not a separate demonstration that readers cannot reproduce.
+Create one simple path from an introduction to a working example. Explain which parts someone needs, which are optional, and what costs to expect. Pair the written guide with a short walkthrough video.
 
-For benchmarks, publish the dataset, configuration, raw results and costs. Keep token reduction separate from total savings. Our managed-memory cost and quality tests remain unrun.
+**Audience:** People exploring the AI Data Plane for the first time.
 
-## How the priorities map to the audit
+### 2. Show how an agent makes a decision
 
-1: G01, G31–32, G35. 2: G07, G17, G26, G36. 3: G02, G15–16, G33–34. 4: G30. 5: G09, G11, G35. 6: G08–09. 7: G33–37, G39. 8: G10, G38, G41. 9: G06, G24–25, G27, G42. 10: G12–13, G45.
+Answer: **“How does the AI know what to do with my question?”**
 
-[Summary](full-audit/README.md) · [Articles and videos](full-audit/CONTENT-REVIEW.md) · [Benchmark plan](full-audit/PROOF-PLAN.md) · [Content templates](content-system/README.md)
+Build a demo where someone asks a question in plain English and watches the agent choose an action, retrieve information and explain its answer. Show what happens when the question is unclear or the information is missing.
+
+**Content:** A short explainer, a practical guide and a demo people can try.  
+**Audience:** Developers and teams evaluating AI assistants.
+
+### 3. Real demos and clear benchmarks
+
+Answer: **“How well does it work, and when is it worth using?”**
+
+Create repeatable tests around recognizable tasks, such as finding information or helping a customer. Explain what we measured, show the results and include where the approach struggled. Turn each study into an article and a video using the same example.
+
+**Content:** Demo, benchmark report and video, with enough detail for someone else to repeat the test.  
+**Audience:** Technical evaluators and buyers who need evidence.
+
+### 4. Explain MCP and help people troubleshoot
+
+Answer: **“How do I connect my AI application, and what do I do when something goes wrong?”**
+
+Explain MCP as a standard way for an AI application to access tools and data. Show a connection from start to finish, then cover common setup problems and how to inspect what happened.
+
+**Content:** Plain-language introduction, connection guide and short troubleshooting videos.  
+**Audience:** Developers connecting an AI application to Couchbase.
+
+### 5. Keep articles, videos and demos consistent
+
+Answer: **“Can I follow this content and get the same result?”**
+
+Use shared templates and a review process. Each video should link to its guide and working example. Give each content package an owner and a review date so it stays useful as the product changes.
+
+**Content:** Article and video templates, publishing checklist and maintenance schedule.  
+**Audience:** Content contributors and everyone following their work.
+
+Start this alongside the other four priorities.
+
+## Next five priorities
+
+| Priority | Focus | What to create |
+|---|---|---|
+| **6. Help people choose a search approach** | Explain when keyword, meaning-based or combined search is useful. | A simple comparison guide and a demo using the same questions and data. |
+| **7. Explain when memory helps** | Show what an assistant can remember across conversations and what happens when that information changes. | A decision guide and a demo comparing answers with and without memory. |
+| **8. Make costs easier to understand** | Explain what customers pay for and which choices affect the bill. | A cost guide and worked examples based on measured usage, with assumptions clearly stated. |
+| **9. Show complete business use cases** | Connect the capabilities to a problem a team recognizes. | End-to-end examples for customer support, internal knowledge search or personalization. |
+| **10. Help teams move beyond the first demo** | Explain what needs attention as data, users and requirements change. | Practical guides on keeping information current, controlling access and monitoring results. |
+
+## How we will judge the work
+
+Can someone understand the use case, follow the guide and get the expected result? Do the article, video and demo agree? Can we show the evidence behind a performance or cost claim?
+
+These are proposed content priorities. Some require new material; others need updates or better links between existing resources. Benchmarks must be completed before we promote their results.
+
+[Supporting research and findings](full-audit/FINDINGS.md) · [Existing articles and videos](full-audit/CONTENT-REVIEW.md)
