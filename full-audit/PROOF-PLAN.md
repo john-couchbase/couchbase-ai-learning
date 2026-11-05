@@ -18,7 +18,7 @@ Sources: [published Memory claims](https://github.com/couchbase/operational-data
 
 Token reduction, fewer model calls and lower total bill are different outcomes. Do not add percentages from unrelated workloads or extrapolate a small synthetic benchmark to production.
 
-## Five studies that answer buyer questions
+## Five proposed studies
 
 | Study | Comparison | Measures | Fairness controls / stop condition |
 |---|---|---|---|
@@ -32,7 +32,7 @@ For Memory, use at least two contrasting scenarios: a support case where prior t
 
 For retrieval, BEIR provides relevance workloads; it does not replace tests of changing records, permission boundaries or business filters. Do not silently label a synthetic vector distance task as semantic relevance.
 
-## Required publication bundle
+## What to publish with each study
 
 1. A short conclusion that names who the result applies to.
 2. Dataset source/license, revisions, queries, expected answers and exclusions.

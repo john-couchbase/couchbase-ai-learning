@@ -1,29 +1,32 @@
 # AI Data Plane marketing priorities
 
-Updated November 5, 2026 after the expanded SDK and content audit.
+November 5, 2026
 
-Start with the [leadership audit](full-audit/README.md). The [45-finding register](full-audit/FINDINGS.md) separates reproduced problems, documented boundaries and content opportunities.
+Start with three projects: a reliable first tutorial, a practical search comparison, and a memory example with a clear reason to use it. These priorities follow the [audit findings](full-audit/FINDINGS.md); the suggested owners still need team agreement.
 
-## The ten priorities
+| Priority | Work to produce | Who it helps | Suggested owner |
+|---|---|---|---|
+| 1 | Repair Catalog and Python examples; replace mislabeled Hyperscale lookups with actual nearest-neighbor queries. Run the examples before filming. | Developers trying the product | Docs and SDK maintainers |
+| 2 | A start-to-finish guide: choose components, set up keys, run a query, inspect the answer and clean up. Show required and optional services and who pays for each. | New evaluators | Technical Marketing and DevRel |
+| 3 | Keyword, vector and hybrid search on the same data. Explain index choices and show mandatory filters working in each retrieval path. | Search developers | Search DevRel and integration maintainers |
+| 4 | A support assistant that retrieves current orders and searches policy documents. Show how a changed record affects its answer. | Application developers and architects | DevRel and Solutions Engineering |
+| 5 | A memory decision guide and demo: later recall, changed preferences, temporary exceptions and deletion. Compare with a saved profile. | Agent developers | Memory PM and DevRel |
+| 6 | A repeatable memory cost study, including a workload where memory adds little value. Report quality, latency and all costs. | Architects and buyers | Performance Engineering and Memory PM |
+| 7 | An SDK guide showing versions, index support, filter syntax, credentials and support contacts. Include separate MCP and app environments where needed. | Developers and platform teams | SDK and integration maintainers |
+| 8 | A troubleshooting demo connecting tool versions, permissions and traces. Include a denied request and failed log write. | Platform and security reviewers | MCP/Catalog maintainers and Technical Marketing |
+| 9 | Operating guides for source changes, credential renewal, model configuration and cache errors. Show recovery and its costs. | Teams preparing deployment | AI Services PM and DevRel |
+| 10 | Consistent article templates, review checks and maintenance ownership. Link each video to its tested guide and code revision. | Content contributors | Technical Marketing and Docs tooling |
 
-Order reflects first-run blockers, reach across audiences, strength of evidence and dependencies. It is a proposed sequence, not an estimated revenue ranking. Owners and effort need team agreement.
+Start item 10 alongside item 1. The order reflects setup blockers and dependencies, not a measured revenue ranking.
 
-| Order | Focus and affected reader | Article or guide | Video and runnable proof | Proposed lead / completion check |
-|---|---|---|---|---|
-| **1** | Repair the first run — developers | Correct Catalog APIs, Python syntax and actual ANN examples | Record only after a clean setup works | **Docs + SDK owners:** pinned examples run; expected results retained. G01, G31–32, G35 |
-| **2** | Start here — new evaluators | “Which pieces do I need?” Three paths: retrieve data, connect an agent, add memory. Include keys, regions, support and cost units | Follow one request from question to verified record; show optional components | **Technical Marketing + DevRel:** a new reader finishes a verified first query and cleanup. G07, G17, G26, G36 |
-| **3** | Search choices and strict filters — retrieval developers | Lexical, dense and hybrid; Search vs Composite vs Hyperscale; exact filter syntax per adapter | Same queries, same data, all three modes; show a filter that must never be violated | **Search DevRel + integration owners:** labeled expected results and negative fixtures. G02, G15–16, G33–34 |
-| **4** | Why operational data matters — app developers and architects | KV vs SQL++ vs search, with current business records | An order or support assistant uses an exact record and policy retrieval; a changed record changes the answer | **DevRel + Technical Marketing:** observable tool arguments, sources and freshness. G30 |
-| **5** | When memory helps — agent developers | Decision guide plus support and personalization recipes; reuse existing reference docs | Same person across sessions, permanent correction, temporary exception and deletion | **Memory PM + DevRel:** distinguish native controls from app logic and show no-memory/profile baselines. G09, G11, G35 |
-| **6** | Prove memory economics — architects and buyers | A reproducible usefulness-and-total-cost study | One workload where memory helps and one where it does not | **Performance Engineering + Memory PM:** quality, extraction cost, infrastructure, latency and stale recall reported. G08–09 |
-| **7** | Make SDK choices predictable — developers and platform teams | One matrix for package, language, index, support route and tested version; isolated MCP/app environments | Switch adapters without losing filters; show least-privilege initialization | **SDK/partner owners:** locked environments and explicit compatibility checks. G33–37, G39 |
-| **8** | Explain governance in practice — platform/security reviewers | MCP permissions, Catalog versions, Tracer and audit logging; who records what | A tool change, a denied operation, a trace lookup and a failed log write | **MCP/Catalog owners + Technical Marketing:** visible coverage and delivery limitations. G10, G38, G41 |
-| **9** | Show operations after day one — production evaluators | Model modes, vectorization updates/deletes, credential rotation, cache and bounded AI Functions | Update a source, change a model, recover a failed workflow; show a wrong cache hit | **AI Services PM + DevRel:** freshness and recovery acceptance tests, charges included. G06, G24–25, G27, G42 |
-| **10** | Maintain a repeatable content system — all contributors | Apply the existing templates and author/reviewer skills to every package | Each video links to the same tested code revision and article | **Technical Marketing + Docs tooling:** owner, tested date, version, review checklist and automated sample checks. G12–13, G45 |
+## What counts as finished
 
-Priority 10 is an enabling workstream to start alongside priority 1, not a reason to postpone the content system. Edge and Operational Insights deserve segment-specific demos after the core journey; their deployment boundaries are already in this audit.
+For every package, a developer unfamiliar with the example should be able to follow the guide, obtain the expected result, inspect a failure case and clean up. Record the versions and results. The video should use the same code, not a separate demonstration that readers cannot reproduce.
 
+For benchmarks, publish the dataset, configuration, raw results and costs. Keep token reduction separate from total savings. Our managed-memory cost and quality tests remain unrun.
 
-[Content review and proposed recordings](full-audit/CONTENT-REVIEW.md) · [Benchmark and proof plan](full-audit/PROOF-PLAN.md) · [SDK coverage](full-audit/CAPABILITIES.md) · [Standardized templates and skills](content-system/README.md)
+## How the priorities map to the audit
 
-The earlier November 4 roadmap is superseded by this order. Existing Memory, Ragas, Tracer and framework guides should be reused; current tutorial defects should be repaired before recording. No new live paid tests were run for this audit.
+1: G01, G31–32, G35. 2: G07, G17, G26, G36. 3: G02, G15–16, G33–34. 4: G30. 5: G09, G11, G35. 6: G08–09. 7: G33–37, G39. 8: G10, G38, G41. 9: G06, G24–25, G27, G42. 10: G12–13, G45.
+
+[Summary](full-audit/README.md) · [Articles and videos](full-audit/CONTENT-REVIEW.md) · [Benchmark plan](full-audit/PROOF-PLAN.md) · [Content templates](content-system/README.md)

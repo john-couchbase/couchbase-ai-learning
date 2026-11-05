@@ -1,0 +1,13 @@
+{
+  "scope": "All 45 finding records, JSON/CSV/Markdown consistency, source IDs, cited local evidence files; relative file targets across tracked Markdown. External URLs and anchors not exhaustively revalidated. No live service tests.",
+  "findings": 45,
+  "sources": 64,
+  "relative_links_checked": 82,
+  "errors": [],
+  "missing_relative_targets": [],
+  "priorities": {
+    "P1": 7,
+    "P2": 36,
+    "P3": 2
+  }
+}

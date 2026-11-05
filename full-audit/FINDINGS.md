@@ -2,13 +2,13 @@
 
 November 5, 2026. Priorities are proposed, not agreed team commitments. P1 blocks a trustworthy first run; P2 improves evaluation or production readiness; P3 is a later segment or measurement task. Older findings have been revised where the wider review found existing content.
 
-## G01 · P1 · Catalog guide and latest SDK disagree
+## G01 · P1 · Catalog guide and package 1.1.5 disagree
 
 **Evidence:** Offline reproduced. **Affected reader:** Application developers.
 
-The guide uses from agentc import tool and Catalog.get_item. Local recheck of agentc 1.1.5, also the current PyPI version, finds neither; agentc.catalog.tool and Catalog.find are present.
+The guide uses from agentc import tool and Catalog.get_item. The November 5 inspection of agentc 1.1.5 found neither; agentc.catalog.tool and Catalog.find are present. Version 1.1.5 was the PyPI release checked on that date.
 
-**Why it matters:** A developer can fail before reaching the value demonstration.
+**Why it matters:** A developer following the example can fail at the import or lookup step.
 
 **Action:** Correct the snippets, pin a tested environment, and execute documentation snippets in release CI.
 
@@ -107,7 +107,7 @@ Integration docs require short-term Bedrock keys, at most 12 hours, and say an e
 
 Component setup, planning, pricing and credential guides exist. The missing deliverable is a short route from the intended task to its required components, credentials and billing units; do not claim there is no getting-started content.
 
-**Why it matters:** The user must discover plan, region, API key and model dependencies during setup.
+**Why it matters:** Evaluators have to assemble plan, region, key and model requirements from separate setup guides.
 
 **Action:** Add a use-case selector with required versus optional services, credential type, region, plan, price unit and teardown.
 
@@ -139,7 +139,7 @@ Public material reports LoCoMo and LongMemEval scores and the announcement repor
 
 The Memory developer guide and customization material are substantial. A use-case decision guide should connect them to current-context and saved-profile alternatives, with measured outcomes and total cost. Actual managed-memory economics remain untested.
 
-**Why it matters:** Buyers may see an expensive extra component without a decision rule.
+**Why it matters:** Evaluators need to know when memory is worth the additional setup and cost.
 
 **Action:** Create a memory/no-memory/profile comparison and total-cost worksheet with explicit ingestion, extraction, embedding, retrieval, model and infrastructure costs.
 
@@ -201,7 +201,7 @@ Descriptions for older AI Services videos now use AI Data Plane branding. Their 
 
 **Evidence:** Documentation / content assessment. **Affected reader:** Application developers.
 
-The channel contains brand stories, architecture panels, demos, SQL/JSON education and customer stories. It is not empty.
+The reviewed channel sample includes product introductions, architecture discussions, demos, SQL/JSON education and customer stories.
 
 **Why it matters:** A beginner still needs a route from overview to a working, evaluated application.
 
@@ -299,7 +299,7 @@ The vector-scale whitepaper includes methodology, hardware, index definitions an
 
 FanKave is a real customer story with operational and AI use cases. It does not establish measured Agent Memory benefits. The commissioned ESG report predates the current memory release.
 
-**Why it matters:** Broad customer logos can be overextended into claims about newly released components.
+**Why it matters:** A customer result for one component does not establish the benefit of another.
 
 **Action:** Build component-specific customer proof: architecture, baseline, outcome, timeline, measurement and approved attribution.
 

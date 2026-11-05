@@ -3,9 +3,9 @@
     "id": "G01",
     "priority": "P1",
     "kind": "Reproduced mismatch",
-    "title": "Catalog guide and latest SDK disagree",
-    "observation": "The guide uses from agentc import tool and Catalog.get_item. Local recheck of agentc 1.1.5, also the current PyPI version, finds neither; agentc.catalog.tool and Catalog.find are present.",
-    "impact": "A developer can fail before reaching the value demonstration.",
+    "title": "Catalog guide and package 1.1.5 disagree",
+    "observation": "The guide uses from agentc import tool and Catalog.get_item. The November 5 inspection of agentc 1.1.5 found neither; agentc.catalog.tool and Catalog.find are present. Version 1.1.5 was the PyPI release checked on that date.",
+    "impact": "A developer following the example can fail at the import or lookup step.",
     "action": "Correct the snippets, pin a tested environment, and execute documentation snippets in release CI.",
     "owner": "Docs + SDK",
     "sources": [
@@ -133,7 +133,7 @@
     "kind": "Journey gap",
     "title": "Connect existing prerequisites and cost guidance",
     "observation": "Component setup, planning, pricing and credential guides exist. The missing deliverable is a short route from the intended task to its required components, credentials and billing units; do not claim there is no getting-started content.",
-    "impact": "The user must discover plan, region, API key and model dependencies during setup.",
+    "impact": "Evaluators have to assemble plan, region, key and model requirements from separate setup guides.",
     "action": "Add a use-case selector with required versus optional services, credential type, region, plan, price unit and teardown.",
     "owner": "PMM + Product UX + Docs",
     "sources": [
@@ -156,7 +156,7 @@
     "priority": "P2",
     "kind": "Evidence gap",
     "title": "Memory benchmark claims need a reproducibility package",
-    "observation": "Public material reports LoCoMo and LongMemEval scores and the announcement reports 33\u201345% fewer tokens versus alternatives. The reviewed claim surfaces do not supply enough configuration, raw outputs and cost accounting to reproduce the comparison.",
+    "observation": "Public material reports LoCoMo and LongMemEval scores and the announcement reports 33–45% fewer tokens versus alternatives. The reviewed claim surfaces do not supply enough configuration, raw outputs and cost accounting to reproduce the comparison.",
     "impact": "Useful vendor evidence exists, but total-cost savings and cross-system superiority cannot be inferred from a headline.",
     "action": "Link a versioned protocol, dataset subsets, models, judges, baselines, token categories, repeated runs and raw results directly from every claim.",
     "owner": "Performance Engineering + PMM",
@@ -178,7 +178,7 @@
     "kind": "Content opportunity",
     "title": "Memory economics and no-memory alternatives",
     "observation": "The Memory developer guide and customization material are substantial. A use-case decision guide should connect them to current-context and saved-profile alternatives, with measured outcomes and total cost. Actual managed-memory economics remain untested.",
-    "impact": "Buyers may see an expensive extra component without a decision rule.",
+    "impact": "Evaluators need to know when memory is worth the additional setup and cost.",
     "action": "Create a memory/no-memory/profile comparison and total-cost worksheet with explicit ingestion, extraction, embedding, retrieval, model and infrastructure costs.",
     "owner": "Technical Marketing + Memory PM",
     "sources": [
@@ -260,9 +260,9 @@
     "priority": "P2",
     "kind": "Packaging opportunity",
     "title": "Turn broad videos into task-based learning paths",
-    "observation": "The channel contains brand stories, architecture panels, demos, SQL/JSON education and customer stories. It is not empty.",
+    "observation": "The reviewed channel sample includes product introductions, architecture discussions, demos, SQL/JSON education and customer stories.",
     "impact": "A beginner still needs a route from overview to a working, evaluated application.",
-    "action": "Curate Learn \u2192 Choose \u2192 Build \u2192 Evaluate \u2192 Operate playlists; link each video to a precise tutorial and code revision.",
+    "action": "Curate Learn → Choose → Build → Evaluate → Operate playlists; link each video to a precise tutorial and code revision.",
     "owner": "Video Marketing",
     "sources": [
       "channel"
@@ -384,7 +384,7 @@
     "kind": "Customer evidence gap",
     "title": "Separate database success from memory ROI",
     "observation": "FanKave is a real customer story with operational and AI use cases. It does not establish measured Agent Memory benefits. The commissioned ESG report predates the current memory release.",
-    "impact": "Broad customer logos can be overextended into claims about newly released components.",
+    "impact": "A customer result for one component does not establish the benefit of another.",
     "action": "Build component-specific customer proof: architecture, baseline, outcome, timeline, measurement and approved attribution.",
     "owner": "Customer Marketing + PMM",
     "sources": [

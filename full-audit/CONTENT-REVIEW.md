@@ -23,7 +23,7 @@ November 5, 2026. This review distinguishes **fix**, **connect/reuse**, and **ne
 | [Memory Lane article](https://www.couchbase.com/blog/build-a-personal-memory-search-with-couchbase-ai-services-and-hyperscale-vector-index/) | Developer / application inspiration | Detailed document-search application | Label it document RAG; the name must not imply an Agent Memory benchmark. November 5 direct refresh was blocked; assessment uses prior review |
 | [Launch article](https://www.couchbase.com/blog/your-ai-agents-are-stuck-in-pilot-its-a-data-problem-not-a-model-problem/) | Buyer / awareness | Explains the business problem and component story | Keep awareness material; route readers to current managed and self-managed instructions |
 
-**Assessment:** the reviewed technical articles offer more than marketing descriptions. The weak point is consistency between the promoted journey, current package interfaces and what a reader can reproduce. Internal analytics are needed to judge whether a particular article attracts or converts the right audience.
+**Assessment:** the reviewed technical articles offer more than marketing descriptions. The weak point is consistency between the recommended setup path, current package interfaces and what a reader can reproduce. Internal analytics are needed to judge whether a particular article attracts or converts the right audience.
 
 The [document inventory](document-inventory.json) captures 71 indexed pages, headings and code-block counts. A fetched page is not a passed tutorial. The [SDK checks](evidence/sdk-doc-checks.json) and [snippet checks](evidence/python-snippet-checks.json) record the narrower executable/static evidence.
 

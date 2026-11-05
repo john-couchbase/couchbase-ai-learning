@@ -4,7 +4,7 @@
 
 ## Coverage
 
-This is a full-scope marketing/developer-journey review across the component families listed in CAPABILITIES.md. It is not an exhaustive line-by-line code audit, a full website/video census, a penetration test or a completed production validation program.
+This is a marketing and developer-experience review across the component families listed in CAPABILITIES.md. It is not an exhaustive line-by-line code audit, a full website/video census, a penetration test or a completed production validation program.
 
 1. Reused earlier source assessments and retained native lab evidence, preserving their original scope and date.
 2. Retrieved the official AI Data Plane documentation index and all 71 unique linked pages. Recorded HTTP status, content hash, headings and code-block counts. All 71 returned 200. Detailed reading focused on entry points, feature boundaries, costs, customization, operations and the findings cited in the register.
