@@ -2,70 +2,30 @@
 
 November 5, 2026
 
-Help people understand what the AI Data Plane can do, choose where to start, and see results they can try for themselves. Start with these five content projects, building on useful material we already have.
+This plan focuses on the guides, videos and demos that will help people understand the AI Data Plane, get started and decide whether it fits their needs. The first five priorities make up the initial content plan; the next five expand on it. We should update and connect useful existing material wherever possible, and use measured results to support performance and cost claims.
 
 ## First five priorities
 
-### 1. A clear getting-started guide
+| Priority | What we want to explain | Content to create | Who it helps |
+|---|---|---|---|
+| **1. A clear getting-started guide** | Where to start, which parts are needed and what costs to expect. | A step-by-step guide and short video that take someone from introduction to a working example. | People exploring the AI Data Plane for the first time. |
+| **2. Show how an agent makes a decision** | How an agent turns a plain-English question into an action and uses information to answer. | An explainer and hands-on demo showing the chosen action, the answer and what happens when information is missing. | Developers and teams evaluating AI assistants. |
+| **3. Real demos and clear benchmarks** | How well it works, where it helps and where it struggles. | Repeatable tests, a results article and a video using the same real-world task. | Technical evaluators and buyers who need evidence. |
+| **4. Explain MCP and help people troubleshoot** | How MCP connects an AI application to tools and data, and how to resolve common setup problems. | A simple introduction, connection guide and short troubleshooting videos. | Developers connecting an AI application to Couchbase. |
+| **5. Keep articles, videos and demos consistent** | How to make content easy to follow and keep it current as the product changes. | Shared templates, a review checklist and a named owner for each guide, video and demo. | Content contributors and everyone following their work. |
 
-Answer: **“Where do I start, and what do I need?”**
-
-Create one simple path from an introduction to a working example. Explain which parts someone needs, which are optional, and what costs to expect. Pair the written guide with a short walkthrough video.
-
-**Audience:** People exploring the AI Data Plane for the first time.
-
-### 2. Show how an agent makes a decision
-
-Answer: **“How does the AI know what to do with my question?”**
-
-Build a demo where someone asks a question in plain English and watches the agent choose an action, retrieve information and explain its answer. Show what happens when the question is unclear or the information is missing.
-
-**Content:** A short explainer, a practical guide and a demo people can try.  
-**Audience:** Developers and teams evaluating AI assistants.
-
-### 3. Real demos and clear benchmarks
-
-Answer: **“How well does it work, and when is it worth using?”**
-
-Create repeatable tests around recognizable tasks, such as finding information or helping a customer. Explain what we measured, show the results and include where the approach struggled. Turn each study into an article and a video using the same example.
-
-**Content:** Demo, benchmark report and video, with enough detail for someone else to repeat the test.  
-**Audience:** Technical evaluators and buyers who need evidence.
-
-### 4. Explain MCP and help people troubleshoot
-
-Answer: **“How do I connect my AI application, and what do I do when something goes wrong?”**
-
-Explain MCP as a standard way for an AI application to access tools and data. Show a connection from start to finish, then cover common setup problems and how to inspect what happened.
-
-**Content:** Plain-language introduction, connection guide and short troubleshooting videos.  
-**Audience:** Developers connecting an AI application to Couchbase.
-
-### 5. Keep articles, videos and demos consistent
-
-Answer: **“Can I follow this content and get the same result?”**
-
-Use shared templates and a review process. Each video should link to its guide and working example. Give each content package an owner and a review date so it stays useful as the product changes.
-
-**Content:** Article and video templates, publishing checklist and maintenance schedule.  
-**Audience:** Content contributors and everyone following their work.
-
-Start this alongside the other four priorities.
+Start the consistency work alongside the other four priorities. Each video should link to the matching guide and working example.
 
 ## Next five priorities
 
-| Priority | Focus | What to create |
-|---|---|---|
-| **6. Help people choose a search approach** | Explain when keyword, meaning-based or combined search is useful. | A simple comparison guide and a demo using the same questions and data. |
-| **7. Explain when memory helps** | Show what an assistant can remember across conversations and what happens when that information changes. | A decision guide and a demo comparing answers with and without memory. |
-| **8. Make costs easier to understand** | Explain what customers pay for and which choices affect the bill. | A cost guide and worked examples based on measured usage, with assumptions clearly stated. |
-| **9. Show complete business use cases** | Connect the capabilities to a problem a team recognizes. | End-to-end examples for customer support, internal knowledge search or personalization. |
-| **10. Help teams move beyond the first demo** | Explain what needs attention as data, users and requirements change. | Practical guides on keeping information current, controlling access and monitoring results. |
+| Priority | What we want to explain | Content to create | Who it helps |
+|---|---|---|---|
+| **6. Help people choose a search approach** | When to use keyword search, search by meaning or a combination of both. | A comparison guide and a demo using the same questions and data. | Teams choosing how to find information. |
+| **7. Explain when memory helps** | What an assistant can remember across conversations and what happens when that information changes. | A decision guide and a demo comparing answers with and without memory. | Teams building personalized or ongoing assistance. |
+| **8. Make costs easier to understand** | What customers pay for and which choices affect the bill. | A cost guide and worked examples based on measured usage. | Evaluators and budget owners. |
+| **9. Show complete business use cases** | How the pieces work together to solve a recognizable problem. | End-to-end demos for customer support, internal knowledge search or personalization. | Teams deciding where to apply the product. |
+| **10. Help teams move beyond the first demo** | What needs attention as data, users and requirements change. | Practical guides on keeping information current, controlling access and monitoring results. | Teams preparing for everyday use. |
 
-## How we will judge the work
+We will judge the content by whether someone can understand the use case, follow the steps and get the expected result. Benchmark results should be published with their test conditions and limitations.
 
-Can someone understand the use case, follow the guide and get the expected result? Do the article, video and demo agree? Can we show the evidence behind a performance or cost claim?
-
-These are proposed content priorities. Some require new material; others need updates or better links between existing resources. Benchmarks must be completed before we promote their results.
-
-[Supporting research and findings](full-audit/FINDINGS.md) · [Existing articles and videos](full-audit/CONTENT-REVIEW.md)
+[Existing articles and videos](full-audit/CONTENT-REVIEW.md) · [Supporting research](full-audit/FINDINGS.md)
